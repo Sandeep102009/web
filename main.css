@@ -1,0 +1,42 @@
+body{
+    background:rgb(86, 92, 77);
+    header
+    {text-decoration:center;}
+    margin-top:10px ;
+
+    main{text-align: center;
+    background:rgb(125, 199, 150);
+    border-radius: 10px;
+    text-shadow:10px rgb(148, 172, 170);
+    font-size: 30px;
+    }
+
+width:50%;
+margin: auto;
+}
+caption{
+    color: #0a43e0;
+    font-size:40px;
+    background-color: rgb(224, 250, 153);
+    
+}
+table{
+    width:50%;
+    height:30px;
+    border: 2px rgb(160, 78, 78) ;
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(17, 15, 15);
+margin-right:24px;
+
+    input[type="text"]{width: 70%; height:30px ; font-size:16px;}
+    input[type="password"]{width: 70%; height:30px ; font-size:16px ;}
+    input[type="sandeep"]{width:30%; background: rgba(88, 133, 122, 0.747);color: rgb(24, 23, 22);height:27px ;  font-size:20px;}
+    input[type="reset"]{width:25%;height:30px ;  background-color: blueviolet; font-size 20px;}
+}
+
+.textstyle
+{
+color: black;
+font-size:100px ;
+}

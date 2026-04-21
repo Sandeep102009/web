@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner</title>
+    <a href="index.html">
+<img src="sk/sa21.jpg"style="width:5%" title="click to close">
+</head>
+<style>
+    @keyframes runtext{
+        from{left:-500px;}
+        to{left:1400px;}
+
+    }
+        
+    
+
+    @keyframes changepic{
+        10%{background-image:url(sk/sa1.jpg);}
+        20%{background-image:url(sk/sa2.jpg);}
+        30%{background-image:url(sk/sa10.jpg);}
+        40%{background-image:url(sk/sa11.jpg);}
+        50%{background-image:url(sk/sa12.jpg);}
+        60%{background-image:url(sk/sa13.jpg);}
+        70%{background-image:url(sk/sa3.jpg);}
+        80%{background-image:url(sk/sa4.jpg);}
+        90%{background-image:url(sk/sa5.jpg);}
+        100%{background-image:url(sk/sa6.jpg);}
+    }
+    @keyframes mycolor{
+        10%{color: rgb(99, 139, 139);}
+        30%{color: rgb(34, 12, 17);}
+        50%{color: aqua;}
+        70%{color: rgb(35, 92, 30);}
+        90%{color: rgb(168, 145, 10);}
+    }
+    header{
+        background-color: blueviolet;
+        background-image: url(sk/sa6.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 600px;
+        color: aquamarine;
+        width: 90%;
+        margin:auto;
+        overflow: hidden;
+        animation: changepic 12s linear infinite;
+        font-size: 60px;
+
+
+    }
+    text{
+        margin-top: 8px;
+        padding: 35px;
+        font-size: 100px;
+        color: brown;
+        text-transform: yellow;
+        background-color: blue;
+        position: relative;
+        left: -500px;
+        top: 100px;
+        animation: runtext 32s linear infinite alternate ,mycolor 2s infinite;
+
+    }
+</style>
+<body>
+    <header> 
+        <div id="text">Welcome to sandeep graphics & HTML </div>
+    </header>
+    
+</body>
+</html>
