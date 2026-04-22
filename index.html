@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+
+
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+<header>
+
+
+
+           <div id="col 1">
+                 <h1>Hii, I Am'<br/>
+Sandeep Kumar</h1>
+<h4> Graphic & Web Designer</h4>
+ 
+           </div>
+           <div id="col 2">
+           
+              <img src="sk/sa2.jpg" style="border-radius:90px; height:200px;margin-left:270px;filter: drop-shadow(7px 7px 7px rgb(210, 112, 7));">
+
+
+           </div>
+
+
+
+
+</header>
+<title>my profile </title>
+<style>
+  h4{
+    font-size:60px;
+    color:rgb(36, 84, 23);
+  filter: drop-shadow(3px 5px 5px rgb(167, 149, 110));
+   width: 100%;
+   margin-left:20px;
+   margin-bottom: 20px;
+  }
+  h1{
+    font-size:90px;
+    color:red;
+  filter: drop-shadow(3px 3px 3px rgb(218, 151, 7));
+   width: 100%;
+   margin-left:20px;
+   margin-bottom: 20px;
+
+  }
+  
+
+  
+div
+{
+border:0px black solid;
+pading:10px;
+
+}
+#col1
+  
+{
+height:200px;
+width:200%;
+margin:10px;px;
+
+}
+
+
+
+#col2
+{
+height:100px;
+width:100%;
+margin:10px;
+}
+
+
+header
+{
+border:1px black solid;
+//height:300px;
+display:flex;
+//flex-direction:column;
+flex-direction:row;
+//justify-content:end;
+//justify-content:start;
+//justify-content:centre;end;
+justify-content:space-between;
+flex-wrap:wrap;
+
+
+}
+
+main
+{
+display:flex;
+flex-wrap:wrap;
+
+}
+
+.cardstyle
+{
+width:60%;
+height:180px;
+box-shadow:10px 10px 10px black;
+
+
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width:600px)
+ {
+
+ body{background:light rgb(130, 139, 101);}
+#col2{display:none}
+header{justify-content:centre;}
+
+.cardstyle{
+margin:auto;
+margin-top:40px;
+
+}
+
+nav ol li
+{
+display:block;
+}
+
+
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+ {
+
+body{background:rgb(218, 246, 173);}
+#col2{width:70%;}
+#col1{width:10%;}
+height:40px;
+}
+main{
+justify-content:centre;
+}
+.cardstyle{width:40%;
+margin:10px;
+}
+
+
+nav ol li
+{
+display:inline;
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px)
+  {
+  body{background:pink;}
+ #col1{width:90%;height:120px;}
+#col2{height:200px}
+.cardstyle{width:20%;
+margin:10px;
+}
+
+
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+body{background:rgb(184, 189, 159);}
+#col2{width:90%;height:400px;margin:auto;}
+#col1{display:none;}
+}
+.pic
+{
+width:100%;
+}
+
+nav
+{
+width:90%;
+margin:auto;
+//background:red;
+text-align:centre;
+margin:50px;
+}
+
+
+nav ol li 
+{
+list-style:none;
+background:rgb(16, 45, 45);
+margin-left:-2px;
+cursor:pointer;
+padding:10px;
+text-align:centre;
+box-shadow:10px 10px 10px black;
+transition:0.50s;
+}
+
+nav ol li:hover
+{
+background:white;
+transform:scale(1.10);
+}
+
+a:link{color:rgb(70, 70, 47);text-decoration:none;}
+a:visited{color:rgb(161, 11, 104);}
+a:hover{text-decoration:underline;color:red;}
+a:active{}
+ h2{
+  font-size:25px;
+  font-style: italic ;
+  color: rgb(87, 76, 26);
+  background-color: rgb(151, 216, 66);
+  width:40%;
+ }
+
+
+
+  
+  
+
+</style>
+
+
+
+<body>
+
+
+
+<nav>
+<!-- order list -->
+<ol>
+<li><a href="index.html">Home</li>
+<li><a href="#">Practice Work</li>
+<li><a href="#">Project</li>
+<li><a href="http://google.com">Google</li>
+
+
+
+
+</ol>
+
+
+</nav>
+
+
+
+
+
+
+<main>
+<div class="cardstyle" id="card1">
+ <a href="sky.html"> 
+<img src="sk/sa3.jpg" class="pic"height="180px"></a>
+
+</div>
+<div class="cardstyle" id="card2">
+  <a href="list.html">
+  <img src="sk/sa12.jpg" class="pic" height="100%"></a>
+</div>
+
+<div class="cardstyle" id="card4">
+  <a href="news.html">
+  <img src="sk/sa4.jpg" class="pic" height="100%"></a>
+</div>
+
+
+
+
+<div class="cardstyle" id="card3">
+  <a href="banner.html">
+   <img src="sk/sa6.jpg" class="pic" height="100%"></a>
+   </div>
+<div class="cardstyle" id="card4">pic 4</div>
+
+
+
+
+</main>
+
+
+
+
+</body>
+<footer>
+<div id="info">
+<h2>
+    ALL Right Reserved <sup>&reg;</sub>
+</h2>
+<!--
+<h2>10<sup>th</sup></h2>
+<h2>H<sub>2</sb>0</h2>
+-->
+
+</div>
+
+
+
+
+<div id="sitemap"
+<ul>
+<li><a href="index.html">Home</li>
+<li><a href="#">Practice Work</li>
+<li><a href="#">Project</li>
+<li><a href="http://google.com">Google</li>
+</ul>
+</div>
+<div id="socialmedia">
+<details>
+<Summarys>Social Media </Summary>
+<ul>
+<li>
+<a href="http://facebook.com">Facebook</a>
+</li>
+<li>
+<a href="http://Instagram.com">Instagram</a>
+</li>
+<li>
+<a href="http://Twitter.com">Twitter</a>
+</li>
+<li>
+<a href="http://youtube.com"><img src="images/"y.jpg"></a>
+</li>
+
+
+</ul>
+
+
+
+
+</details>
+
+
+
+</div>
+
+
+</footer>
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+</html>
+
+
+
+
+
+
+
+
+
