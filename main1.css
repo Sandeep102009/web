@@ -1,39 +1,51 @@
 body{
-    background:rgb(162, 175, 141);
-    
-    text-decoration:center;
-    margin-top:10px ;}
+    background:rgb(155, 168, 134);
+    border: 1px blue;
+    header{
 
-    main{text-align: center;
-    background:rgb(117, 145, 126);
+
+    text-align:center;
+    margin-top:10px ;}
+    }
+    main
+    {text-align: center;
+    background:rgb(210, 179, 205);
     border-radius: 10px;
     text-shadow:10px rgb(148, 172, 170);
-    font-size: 30px;
-    }
+    font-size: 18px;
+    
+    
 
 width:50%;
-margin: auto;
+margin: auto;}
 
 caption{
     color: #0a43e0;
-    font-size:40px;
-    background-color: rgb(224, 250, 153);
+    font-size:30px;
+    background-color: rgb(205, 143, 179);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 table{
-    width:50%;
-    height:30px;
+    width:100%;
+    
     border: 2px rgb(160, 78, 78) ;
     padding:30px;
+    border: 3px black;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgb(17, 15, 15);
-margin-right:24px;
-
-    input[type="text"]{width: 70%; height:30px ; font-size:16px;}
-    input[type="password"]{width: 70%; height:30px ; font-size:16px ;}
-    input[type="sandeep"]{width:30%; background: rgba(88, 133, 122, 0.747);color: rgb(24, 23, 22);height:27px ;  font-size:20px;}
-    input[type="reset"]{width:25%;height:30px ;  background-color: blueviolet; font-size 20px;}
+    margin: auto;
 }
+    input[type="text"]{width: 95%;ight:22px ;}
+    input[type="text2"]{width: 95%height:22px ;
+     font-size:12px;}
+     input[type="password"]{width: 100%;}
+    input[type="number"]{width:95%; font-size:12px ;}
+    input[type="mssage"]{width:100%;ckground: rgba(88, 133, 122, 0.747);color: rgb(24, 23, 22);  font-size:20px;}
+    input[type="reset"]{width:100%;height:25px ;  background-color: blueviolet; font-size:15px;}
+    input[type="submit"]{width:100%;background-color: aquamarine; font-size:20px;}
+    select{width: 100%;}
+
 
 .textstyle
 {

@@ -15,8 +15,8 @@ Sandeep Kumar</h1>
  
            </div>
            <div id="col 2">
-           
-              <img src="sk/sa2.jpg" style="border-radius:90px; height:200px;margin-left:270px;filter: drop-shadow(7px 7px 7px rgb(210, 112, 7));">
+           <h5>
+              <img src="sk/sa2.jpg" style="border-radius:360px;width:50%; height:200px; margin-left:200px;filter: drop-shadow(9px 9px 9px  rgb(210, 112, 7));"></h5>
 
 
            </div>
@@ -27,12 +27,18 @@ Sandeep Kumar</h1>
 </header>
 <title>my profile </title>
 <style>
+  h5{
+    position: relative;
+    right:250px;
+    top: 100px;
+
+  }
   h4{
     font-size:60px;
-    color:rgb(36, 84, 23);
+    color:rgb(83, 150, 64);
   filter: drop-shadow(3px 5px 5px rgb(167, 149, 110));
    width: 100%;
-   margin-left:20px;
+   margin-left:50px;
    margin-bottom: 20px;
   }
   h1{
@@ -50,7 +56,8 @@ Sandeep Kumar</h1>
 div
 {
 border:0px black solid;
-pading:10px;
+padding:2px;
+
 
 }
 #col1
@@ -66,6 +73,7 @@ margin:10px;px;
 
 #col2
 {
+  background-color: rgb(56, 50, 50);
 height:100px;
 width:100%;
 margin:10px;
@@ -74,7 +82,7 @@ margin:10px;
 
 header
 {
-border:1px black solid;
+border:px black solid;
 //height:300px;
 display:flex;
 //flex-direction:column;
@@ -97,7 +105,7 @@ flex-wrap:wrap;
 
 .cardstyle
 {
-width:60%;
+width:50%;
 height:180px;
 box-shadow:10px 10px 10px black;
 
@@ -111,7 +119,7 @@ box-shadow:10px 10px 10px black;
 @media only screen and (max-width:600px)
  {
 
- body{background:light rgb(130, 139, 101);}
+ body{background:light rgb(152, 102, 172);}
 #col2{display:none}
 header{justify-content:centre;}
 
@@ -121,13 +129,16 @@ margin-top:40px;
 
 }
 
+
+
+ }
 nav ol li
 {
 display:block;
 }
 
 
-}
+
 
 
 
@@ -137,10 +148,11 @@ display:block;
 @media only screen and (min-width: 600px)
  {
 
-body{background:rgb(218, 246, 173);}
+body{background:rgb(65, 82, 38);}
 #col2{width:70%;}
 #col1{width:10%;}
-height:40px;
+{width:20%;
+height:40px;}
 }
 main{
 justify-content:centre;
@@ -161,13 +173,13 @@ display:inline;
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width:768px)
+@media only screen and (min-width:508px)
   {
-  body{background:pink;}
+  body{background:rgb(238, 168, 180);}
  #col1{width:90%;height:120px;}
 #col2{height:200px}
-.cardstyle{width:20%;
-margin:10px;
+.cardstyle{width:18%; height: 200px;
+margin:10px; margin-left: 20px;
 }
 
 
@@ -177,9 +189,9 @@ margin:10px;
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 892px)
 {
-body{background:rgb(184, 189, 159);}
+body{background:rgb(48, 85, 62);}
 #col2{width:90%;height:400px;margin:auto;}
 #col1{display:none;}
 }
@@ -193,45 +205,74 @@ nav
 width:90%;
 margin:auto;
 //background:red;
-text-align:centre;
+text-align:center;
 margin:50px;
 }
 
 
 nav ol li 
 {
-list-style:none;
-background:rgb(16, 45, 45);
+list-style:no;
+background:rgb(152, 202, 202);
 margin-left:-2px;
 cursor:pointer;
-padding:10px;
-text-align:centre;
+padding:20px;
+text-align:center;
 box-shadow:10px 10px 10px black;
 transition:0.50s;
 }
 
 nav ol li:hover
 {
-background:white;
+background:rgb(156, 179, 102);
 transform:scale(1.10);
 }
 
-a:link{color:rgb(70, 70, 47);text-decoration:none;}
-a:visited{color:rgb(161, 11, 104);}
-a:hover{text-decoration:underline;color:red;}
+a:link{color:rgb(51, 51, 41);text-decoration:none;}
+a:visited{color:rgb(38, 41, 34);}
+a:hover{text-decoration:underline;color:rgb(45, 46, 15);}
 a:active{}
+
  h2{
-  font-size:25px;
+  font-size:30px;
   font-style: italic ;
   color: rgb(87, 76, 26);
   background-color: rgb(151, 216, 66);
-  width:40%;
+  width:18%;
  }
 
+ footer
+{
+ color: rgb(40, 117, 9);
+ font-size: 20px;
+display:flex;
+flex-decoration:row;
+text-align:center;
+margin-top:100px;
+clear:both;
+text-color:rgb(24, 10, 10);
+}
 
+footer #info,#sitemap,#socialmedia
+{
+width:200%;
+padding:10px;
+}
+#sitemap ul li
+{
+  color: rgb(153, 29, 29);
+list-style: none;
+text-align:center;
+margin-left:40%;
+}
+#socialmedia ul li
+{
+list-style:none;
+text-align:center;
+margin-left:40%;
+color: aqua;
 
-  
-  
+}
 
 </style>
 
@@ -245,7 +286,7 @@ a:active{}
 <!-- order list -->
 <ol>
 <li><a href="index.html">Home</li>
-<li><a href="#">Practice Work</li>
+<li><a href="rgst.html">Practice Work</li>
 <li><a href="#">Project</li>
 <li><a href="http://google.com">Google</li>
 
@@ -264,7 +305,9 @@ a:active{}
 
 <main>
 <div class="cardstyle" id="card1">
- <a href="sky.html"> 
+ <a href="sky.html">
+  <p>
+    photo gallry</p>
 <img src="sk/sa3.jpg" class="pic"height="180px"></a>
 
 </div>
@@ -314,7 +357,7 @@ a:active{}
 <div id="sitemap"
 <ul>
 <li><a href="index.html">Home</li>
-<li><a href="#">Practice Work</li>
+<li><a href="rgst.html">Practice Work</li>
 <li><a href="#">Project</li>
 <li><a href="http://google.com">Google</li>
 </ul>
