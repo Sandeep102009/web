@@ -6,57 +6,107 @@
 
 <header>
 
+<nav>
+<!-- order list -->
+<ol>
+<li><a href="index.html">Home</li>
+<li><a href="prtce.html">Practice Work</li>
+<li><a href="#">Project</li>
+  <li><a href="#">contect</li>
+
+<li><a href="http://google.com">Google</li>
+
+</ol>
+</nav>
+
+
+
+
+
+
+
+
 
 
            <div id="col 1">
                  <h1>Hii, I Am'<br/>
 Sandeep Kumar</h1>
 <h4> Graphic & Web Designer</h4>
+
+
  
            </div>
            <div id="col 2">
-           <h5>
-              <img src="sk/sa2.jpg" style="border-radius:360px;width:50%; height:200px; margin-left:200px;filter: drop-shadow(9px 9px 9px  rgb(210, 112, 7));"></h5>
+           
+           <img  src="sk/sa2.jpg" >
 
+           
 
            </div>
+           <table border="0" cellpadding="10">
 
 
+             <tr>
+              <td>  
+      <h6>
+       A creative professional specializing in UI/UX design, web design, web development, and video editing, focused on building modern and engaging digital experiences
+ </h6><
 
 
 </header>
 <title>my profile </title>
 <style>
-  h5{
-    position: relative;
-    right:250px;
-    top: 100px;
 
-  }
-  h4{
-    font-size:60px;
-    color:rgb(83, 150, 64);
-  filter: drop-shadow(3px 5px 5px rgb(167, 149, 110));
-   width: 100%;
-   margin-left:50px;
-   margin-bottom: 20px;
-  }
-  h1{
-    font-size:90px;
-    color:red;
-  filter: drop-shadow(3px 3px 3px rgb(218, 151, 7));
-   width: 100%;
-   margin-left:20px;
-   margin-bottom: 20px;
+h4{
+  font-size:50px ;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top:-200px;
+ color: blue;
+}
 
-  }
+ 
+h6{
+color: rgb(46, 46, 102);
+  font-size: 20px;
+  text-align: center;
+  border-radius:20px;
+  margin-top: 15px;
+  margin:auto;
+  display: inline-block;
   
+}
+
+
+
+
+h1
+{
+  filter: drop-shadow(2px 3px 3px black);
+color: rgb(60, 92, 81);
+font-size: 60px;
+height:400px;
+
+width:100%;
+margin:auto;
+margin-top:10px;
+text-align:center;
+padding-top:10px;
+
+text-transform:uppercase;
+
+}
+
+
+ 
+
 
   
 div
 {
-border:0px black solid;
-padding:2px;
+border:0px rgb(20, 3, 3) solid;
+padding:5px;
 
 
 }
@@ -78,23 +128,42 @@ height:100px;
 width:100%;
 margin:10px;
 }
+img{
+
+  font-size: 20px;
+  text-align: center;
+  border-radius:20px;
+  margin-top: 15px;
+  margin:auto;
+  display: flex;
+  width: 15%;
+  height:100px;
+  border-radius: 360px;
+
+  
+}
 
 
 header
 {
-border:px black solid;
-//height:300px;
+//border: black solid;
+height:300px;
 display:flex;
-//flex-direction:column;
+flex-direction:column;
 flex-direction:row;
-//justify-content:end;
-//justify-content:start;
-//justify-content:centre;end;
+justify-content:end;
+justify-content:start;
+justify-content:centre;end;
 justify-content:space-between;
 flex-wrap:wrap;
-
+//background:black;
 
 }
+
+
+
+
+
 
 main
 {
@@ -119,7 +188,7 @@ box-shadow:10px 10px 10px black;
 @media only screen and (max-width:600px)
  {
 
- body{background:light rgb(152, 102, 172);}
+ body{background:light rgb(160, 13, 218);}
 #col2{display:none}
 header{justify-content:centre;}
 
@@ -134,7 +203,7 @@ margin-top:40px;
  }
 nav ol li
 {
-display:block;
+display:inline;
 }
 
 
@@ -148,7 +217,7 @@ display:block;
 @media only screen and (min-width: 600px)
  {
 
-body{background:rgb(65, 82, 38);}
+body{background:rgb(131, 206, 10);}
 #col2{width:70%;}
 #col1{width:10%;}
 {width:20%;
@@ -175,7 +244,7 @@ display:inline;
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:508px)
   {
-  body{background:rgb(238, 168, 180);}
+  body{background:rgb(192, 240, 200);}
  #col1{width:90%;height:120px;}
 #col2{height:200px}
 .cardstyle{width:18%; height: 200px;
@@ -191,7 +260,7 @@ margin:10px; margin-left: 20px;
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 892px)
 {
-body{background:rgb(48, 85, 62);}
+body{background:rgb(115, 241, 199);}
 #col2{width:90%;height:400px;margin:auto;}
 #col1{display:none;}
 }
@@ -202,25 +271,34 @@ width:100%;
 
 nav
 {
-width:90%;
+  display:inline;
+  font-size:30px;
+width:100%;
 margin:auto;
 //background:red;
 text-align:center;
-margin:50px;
 }
-
 
 nav ol li 
 {
-list-style:no;
-background:rgb(152, 202, 202);
-margin-left:-2px;
+list-style:inside;
+
+
+
+background:rgb(5, 236, 236);
+margin-left:200px;
 cursor:pointer;
-padding:20px;
+padding:12px;
 text-align:center;
 box-shadow:10px 10px 10px black;
 transition:0.50s;
+margin: auto;
+display: inline;
+margin-left:50px ;
+margin-bottom: 15px;
 }
+
+
 
 nav ol li:hover
 {
@@ -228,7 +306,7 @@ background:rgb(156, 179, 102);
 transform:scale(1.10);
 }
 
-a:link{color:rgb(51, 51, 41);text-decoration:none;}
+a:link{color:rgb(196, 196, 58);text-decoration:none;}
 a:visited{color:rgb(38, 41, 34);}
 a:hover{text-decoration:underline;color:rgb(45, 46, 15);}
 a:active{}
@@ -236,16 +314,109 @@ a:active{}
  h2{
   font-size:30px;
   font-style: italic ;
-  color: rgb(87, 76, 26);
-  background-color: rgb(151, 216, 66);
+  color: rgb(233, 192, 8);
+  //background-color: rgb(151, 216, 66);
   width:18%;
  }
 
  footer
 {
  color: rgb(40, 117, 9);
- font-size: 20px;
+ font-size:20px;
 display:flex;
+flex-decoration:row;
+text-align:center;
+margin-top:100px;
+clear:both;
+text-color:rgb(221, 4, 4);
+}
+
+footer #info{
+  width:200%;
+padding:10px;
+}
+#sitemap{
+  width:200%;
+padding:10px;
+}
+#socialmedia
+{width:200%;
+padding:10px;
+color: rgb(118, 201, 10);
+}
+
+
+#socialmedia ul li
+{
+list-style:none;
+text-align:center;
+margin-left:40%;
+color: rgb(231, 185, 133);
+
+}
+#socialmedia{
+font-size: 30px;
+color: rgb(5, 61, 61);
+width:20%;
+padding:20px;
+}
+
+#sitemap ul li
+{
+ color: rgb(47, 133, 21);
+list-style: none;
+text-align:center;
+margin-left :40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size:20px;
+color: rgb(127, 11, 236);
+}
+
+
+#socialmedia ul li
+{
+font-size: 20px;
+display: inline block;
+margin-top: 10px;
+
+list-style:inside;
+color: blue;
+margin-left:-2px;
+cursor:pointer;
+padding:10px;
+text-align:center;
+box-shadow:10px 10px 10px black;
+transition:0.50s;
+color: rgb(23, 221, 32);
+
+
+}
+
+
+
+
+
+#footer #info,{
+width:50%;
+padding:30px;
+
+}
+
+
+
+Summary{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: blue;
+}
+
+
+
+ #footer
+{
+ color: rgb(163, 33, 120);
+ font-size:20px;
+display:inline-block;
 flex-decoration:row;
 text-align:center;
 margin-top:100px;
@@ -253,26 +424,8 @@ clear:both;
 text-color:rgb(24, 10, 10);
 }
 
-footer #info,#sitemap,#socialmedia
-{
-width:200%;
-padding:10px;
-}
-#sitemap ul li
-{
-  color: rgb(153, 29, 29);
-list-style: none;
-text-align:center;
-margin-left:40%;
-}
-#socialmedia ul li
-{
-list-style:none;
-text-align:center;
-margin-left:40%;
-color: aqua;
 
-}
+
 
 </style>
 
@@ -282,56 +435,12 @@ color: aqua;
 
 
 
-<nav>
-<!-- order list -->
-<ol>
-<li><a href="index.html">Home</li>
-<li><a href="rgst.html">Practice Work</li>
-<li><a href="#">Project</li>
-<li><a href="http://google.com">Google</li>
-
-
-
-
-</ol>
-
-
-</nav>
-
-
 
 
 
 
 <main>
-<div class="cardstyle" id="card1">
- <a href="sky.html">
-  <p>
-    photo gallry</p>
-<img src="sk/sa3.jpg" class="pic"height="180px"></a>
-
-</div>
-<div class="cardstyle" id="card2">
-  <a href="list.html">
-  <img src="sk/sa12.jpg" class="pic" height="100%"></a>
-</div>
-
-<div class="cardstyle" id="card4">
-  <a href="news.html">
-  <img src="sk/sa4.jpg" class="pic" height="100%"></a>
-</div>
-
-
-
-
-<div class="cardstyle" id="card3">
-  <a href="banner.html">
-   <img src="sk/sa6.jpg" class="pic" height="100%"></a>
-   </div>
-<div class="cardstyle" id="card4">pic 4</div>
-
-
-
+  
 
 </main>
 
@@ -354,7 +463,7 @@ color: aqua;
 
 
 
-<div id="sitemap"
+<div id="sitemap"></div>
 <ul>
 <li><a href="index.html">Home</li>
 <li><a href="rgst.html">Practice Work</li>
@@ -362,6 +471,9 @@ color: aqua;
 <li><a href="http://google.com">Google</li>
 </ul>
 </div>
+
+
+
 <div id="socialmedia">
 <details>
 <Summarys>Social Media </Summary>

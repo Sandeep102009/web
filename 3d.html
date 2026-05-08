@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+@keyframes ani{
+//from{transform:rotateY(@deg) rotateX(@deg) rotateZ(0);}
+
+//to{transform:rotateY(360deg) rotateX(360deg) rotateZ(360deg)}
+
+from {transform:rotateY(0);}
+to{transform:rotateY(360deg)}
+}
+#main{
+Background: black;
+background-image: url(sk/sa9.jpg);
+width:500px;
+height:200px;
+margin: auto;
+
+perspective: 300px;
+
+
+}
+
+#card{
+width:200px;
+height:100px;
+background: rgb(247, 73, 73);
+font-size:30px;
+color: aliceblue;
+text-align:center;
+box-sizing: border-box;
+text-transform: uppercase;
+ //padding-top:10%;
+position:relative;
+animation:ani 20s infinite alternate;
+}
+
+
+#pic{
+display: block;
+width: 90%;
+height: 150px;
+position: relative;}
+#pic1{
+    
+    display: block;
+    top: 0px;
+    backface-visibility: visible;
+
+
+
+}
+#pic2{
+
+     display: block;
+    top:200px;
+    left: 200px;
+    backface-visibility:hidden;
+
+
+
+}
+#pic3
+{
+
+     display: block;
+    top:200px;
+    left:0px;
+    backface-visibility:hidden;
+}
+
+
+
+
+
+
+</style>
+<body>
+
+
+<div id="main">
+
+<div id="card">
+
+<img  id="p1" class="pic" src="sk/sa3.jpg"> 
+<img  id="p2" class="pic" src="sk/sa10.jpg">
+
+</div>    
+</div>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

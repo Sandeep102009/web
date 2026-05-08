@@ -38,11 +38,11 @@ table{
 }
     input[type="text"]{width: 95%;ight:22px ;}
     input[type="text2"]{width: 95%height:22px ;
-     font-size:12px;}
+     font-size:22px;}
      input[type="password"]{width: 100%;}
     input[type="number"]{width:95%; font-size:12px ;}
     input[type="mssage"]{width:100%;ckground: rgba(88, 133, 122, 0.747);color: rgb(24, 23, 22);  font-size:20px;}
-    input[type="reset"]{width:100%;height:25px ;  background-color: blueviolet; font-size:15px;}
+    input[type="reset"]{width:100%;height:25px ;  background-color: blueviolet; font-size:18px;}
     input[type="submit"]{width:100%;background-color: aquamarine; font-size:20px;}
     select{width: 100%;}
 
