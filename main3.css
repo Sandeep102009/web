@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+table{  
+
+  display: inline block;
+    padding:20px;
+    border:2px rgb(218, 7, 7);
+    background-color:rgb(255, 238, 0) ;
+  
+    box-shadow: 10px 10px 10px rgb(126, 117, 117);
+    margin: auto;
+    position:relative;
+
+top: -30px;
+  
+
+
+    
+
+
+}
+    input[type="text"]{width:250px; height:35px ; font-size:26px ;     margin-bottom: 20px;background-color: #500b08; color: rgb(230, 240, 240);}
+     input[type="email"]{width:250px; height:35px ; font-size:26px;    margin-bottom: 20px; background-color: #490f0f; color: rgb(230, 240, 240);}
+
+  
+
+.textstyle
+{
+color: rgb(177, 125, 125);
+font-size:50px ;
+}
