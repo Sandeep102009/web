@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box
+{
+margin:auto;
+background: rgb(151, 130, 130);
+width:800px;}
+.pic
+{
+width:100px;
+height:100px;
+margin: 1px;
+transition: 0.50s;
+cursor: pointer;
+position: relative;
+}
+#mask
+{
+background: 200px;
+width:100px;
+height:130px;
+background: rgb(5, 5, 5);
+box-shadowL10px 10px 10px gray;
+margin:auto;
+overflow:hidden;
+
+}
+#slider
+{
+margin:1px;
+width:100%;
+}
+
+</style>
+<body>
+    <div id="mask">
+
+<div id="box">
+
+<img src="sk/s10.jpg" class="pic">
+<img src="sk/sa6.jpg" class="pic">
+<img src="sk/s4.jpg" class="pic">
+<img src="sk/s7.jpg" class="pic">
+<img src="sk/sa21.jpg" class="pic">
+<img src="sk/s3.jpg" class="pic">
+<img src="sk/s2.jpg" class="pic">
+
+
+
+</div>
+<input type = "range" min="0" max="600" id="slider" oninput="move()">
+</div>
+
+<input type="color" oninput="document.body.style.background=this.value">
+<script>
+
+function move() {
+var slider = document.getElementById("slider");
+var box = document.getElementById("box");
+box.style.marginLeft = -slider.value + "px";
+}
+</script>
+    
+</body>
+</html>

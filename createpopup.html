@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mystyle{
+        box-shadow: 10px 10px 10px gray;
+        height: 150px;
+        border:1px black;
+        width: 150px;
+        padding: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 10px;
+        background-color: blue;
+
+    }
+
+</style>
+<body>
+    <script>
+        function show()
+        {
+
+        var p =document.createElement("div")
+        document.body.appendChild(p)
+        p.className="mystyle"
+        p.innerHTML ="<button onclick='body.removechild(p)' style='margin-left:80%;font-size:8px;border:1px;'>❌</button>"
+           p. innerHTML +="<br/><img style='width:100%'src='sk/sa22.jpg'>"
+            setTimeout("closeadd()",10000) 
+
+           }
+               document.title = "Rrady"
+               var t = setTimeout("show()",5000)
+               function closeadd()
+               {
+                document.body.removeChild(p)
+               }
+
+    </script>
+    
+</body>
+</html>
