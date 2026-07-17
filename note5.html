@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name Changer</title>
+
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f4f4f4;
+    font-family:Arial, sans-serif;
+}
+
+#nameBox{
+    font-size:40px;
+    font-weight:bold;
+    color:#333;
+    padding:20px 40px;
+    border:2px solid #333;
+    border-radius:10px;
+    background:white;
+}
+</style>
+</head>
+<body>
+
+<div id="nameBox">Jagan</div>
+
+<script>
+const names = [
+    "Jagan",
+    "Sandeep",
+    "Prakash",
+    "Sarma",
+    "Mohan"
+];
+
+let index = 0;
+const nameBox = document.getElementById("nameBox");
+
+setInterval(() => {
+    index++;
+    
+    if(index >= names.length){
+        index = 0;
+    }
+
+    nameBox.textContent = names[index];
+}, 6000); // 6000ms = 6 seconds
+</script>
+
+</body>
+</html>

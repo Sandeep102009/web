@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1>Menu box</h1>
+<style>
+    h1
+    { font-family:Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 10PX 10PX 10PX rgb(107, 134, 133);
+        text-align: center;
+      background-color: rgb(110, 218, 182);
+      color:rgb(7, 48, 8)
+      
+      
+    }
+     #nav
+     {   
+        display:flex;
+        justify-content: space-evenly
+        
+
+     }
+     #m,#m2,#m3
+    { text-align: center;
+        font-size: 25px;
+        width: 120px;
+        height: 150px;
+        margin-top: 2px;
+        background: rgb(1, 28, 29);
+        color: rgb(223, 222, 222);
+        padding: 0px;
+        box-shadow: 10px 10px 10px gray;
+        border-radius: 10px;
+
+    }
+    li
+    {
+        list-style-type:none;
+        padding: 10px;
+        cursor: pointer;
+        
+
+    }
+    li:hover 
+    {
+        background: rgb(54, 8, 8);
+        color: white;
+        border-radius: 10px;
+
+    }
+    .toggle
+    {
+        display: none;
+
+    }
+
+</style>
+<body>
+    <div id ="nav">
+        <div>
+            <button onclick="show_hide_menu(event)" id="menu1">Main</button>
+         <ol id="m" class="toggle">
+         <li>Main</li>
+         <li>Project</li>
+         <li>Practice</li>
+
+         </ol>
+
+    </div>
+    <div>
+    <button onclick="show_hide_menu(event)" id = "menu2">Project</button>
+    <ol id="m2" class="toggle">
+     <li>HTML</li>
+     <li>Javascript</li>
+     <li>Bootstrape</li>
+
+    </ol>
+    </div>
+    
+    <div>
+      <button onclick="show_hide_menu(event)" id = "menu3">Social Media</button>
+    <ol id="m3" class="toggle">
+     <li>YouTube</li>
+     <li>Instagram</li>
+     <li>Facebook</li>
+
+    </ol>
+    </div>
+  </div>
+      <script>
+         var menu_visible = false;
+
+   var m1 = document.getElementById("m");
+
+    function show_hide_menu(event)
+        {
+           // alert(event.target.id)
+             var mid = event.target.id
+
+             m1.classList.add("toggle");
+             m2.classList.add("toggle");
+             m3.classList.add("toggle");
+         
+
+             switch(mid)
+
+              {
+
+                case "menu1":
+                m1.classList.remove("toggle");
+                document.title ="menu1"
+                break;
+                 case "menu2":
+                m2.classList.remove("toggle");
+                document.title ="menu2"
+                break;
+                 case "menu3":
+                m3.classList.remove("toggle");
+                document.title ="menu3"
+                break;
+            }
+        }
+      
+
+  window.onclick = function(event)
+  {
+
+         //alert(event.target)
+    if((event.target == "[object HTMLDivElement]")||(event.target == "[object HTMLHtmlElement]")||(event.target == "[object HTMLUnownElement]"))
+
+        {
+               m1.classList.add("toggle");
+             m2.classList.add("toggle");
+             m3.classList.add("toggle");
+        }
+   }      
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
