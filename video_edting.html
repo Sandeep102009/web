@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Editing Course</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+   body {
+            background: linear-gradient(135deg, #0f172a, #111827);
+   
+            overflow-x: hidden;
+        }
+
+ 
+header img
+{
+    width: 150px;
+    margin: auto;
+    position: absolute;
+    left:10px;
+    top: 10px;
+ 
+}
+header{
+   
+
+    background-image: url(sk/m12.jpg);
+ 
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+     
+    font-size:40px;
+    font-weight: bold;
+    color: rgb(219, 250, 255);
+}
+
+header p{width:200px;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    background-color: rgb(89, 148, 11)
+}
+#cour{
+    text-align:center;
+    margin: auto;
+    width: 500px;
+    font-size:40px;
+    font-weight:bold;
+    color:#333;
+    
+    border:2px solid #333;
+    border-radius:10px;
+    background:rgb(255, 255, 255);
+}
+
+
+
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:rgb(246, 253, 66);
+    color:rgb(27, 17, 17);
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight: bold;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.cou{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+    color: rgb(0, 229, 255);
+}
+
+.sk{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.sand{
+    
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:10px 10px 10px rgba(126, 129, 97, 0.611);
+}
+.work
+{
+    font-size: 25px;
+    color: rgb(210, 253, 35);
+background:rgb(42, 47, 58);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:10px 10px 10px rgba(109, 110, 99, 0.611);
+margin: auto;
+    text-align: center;
+    width: 250px;
+}
+
+footer{
+   
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+ <a name="top">
+<header>
+    <img src="sk/1.png" alt="">
+
+
+    <div>
+    <h1>Professional Video Editing Course</h1>
+    <p>Class timing</p>
+ <div id="cour">Online Classes</div>
+
+<script>
+const names = [
+    "Online Classes",
+    "Ofline Classes",
+    "MOnday to Saturday",
+   
+];
+
+let index = 0;
+const nameBox = document.getElementById("cour");
+
+setInterval(() => {
+    index++;
+    
+    if(index >= names.length){
+        index = 0;
+    }
+
+    nameBox.textContent = names[index];
+}, 1500); 
+</script>
+    <a href="#" class="btn">Enroll Now</a>
+   
+</header>
+
+<div class="container">
+
+<h2 class="cou">Course Details</h2>
+
+<div class="sk">
+
+<div class="sand">
+<h3>Duration</h3>
+<p>6 Months Professional Training</p>
+</div>
+
+<div class="sand">
+<h3>Software</h3>
+<p>Premiere Pro, After Effects, DaVinci Resolve, CapCut</p>
+</div>
+
+
+
+
+
+<div class="sand">
+<h3>Class Notes</h3>
+<p>PDF Notes Available</p>
+</div>
+
+<div class="sand">
+<h3>Class Mode</h3>
+<p>Online & Offline Both Available</p>
+</div>
+
+<div class="sand">
+<h3>Background Editing</h3>
+<p>Green Screen & Background Replacement</p>
+</div>
+
+<div class="sand">
+<h3>Final Project</h3>
+<p>Course Ending Presentation Project</p>
+</div>
+
+</div>
+
+</div>
+<main>
+
+    <div class="work">
+        <h4>Student Practice Work</h4>
+
+    </div>
+</main>
+
+<footer>
+<h3>Video Editing Course Admission Open</h3>
+<p>Contact: +91 XXXXX XXX12</p>
+<p>Email- sanxxxxxxx@gmail.com</p>
+</footer>
+
+
+
+</body>
+</html>

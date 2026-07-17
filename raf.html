@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<a href="prtce.html">
+<img src="sk/sa31.jpg"style="width:3%" title="click to close">
+</a>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book mark</title>
+    <style>
+ html
+{
+scroll-behavior:smooth;
+
+}
+@keyframes blink
+{
+
+from{opacity:0;color:rgb(167, 167, 16);}
+to{opacity:1;color:red;}}
+
+header
+{
+background-color: rgb(15, 71, 51);
+box-sizing: border-box;
+margin-top: 10px;
+color: aliceblue;
+text-align: center;
+font-size: 70px;
+padding: 100px;
+box-shadow: 10px 10px 10px gray;
+
+}
+
+
+
+#my
+
+{
+color:white;
+transition:0.50s;
+animation:blink 1s infinite alternate;
+}
+@keyframes change
+{
+10%{content:"My mame Sandeep Kumar"; color: rgb(247, 247, 91);}
+20%{content:"Graphics Designer"; transform:scale(1.5); color: black;}
+30%{content: "Welcome to Area Animation"; background:lime;}
+40%{content:"Lakshay Exhibition....";color:orange;}
+50%{content:"Lpg Cylinder Crisis";color:white; background:black;}
+60%{content: "India Today ...";}
+70%{content:"Stock Market down";color: forestgreen;}
+80%{content:"Learn UI/UX from Arena";color: crimson;}
+}
+
+#news
+{
+color:cyan;}
+
+#news::after
+{
+content:" Today";
+transition:2s;
+animation:change 12s infinite alternate;
+}
+
+ </style>
+    
+<a name="top">
+<header>
+<span id="my">Hyper Link Book Marks</span>
+<div id="news"> News <div></div>
+</header>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
